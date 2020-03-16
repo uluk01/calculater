@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    color: #1f425d;
+    font-weight: 300;
+    font-size: 18px;
+}
+a{
+    display: inline-block;
+    color: black!important;
+    text-decoration: none!important;
+    list-style: none!important;
+}
+.calculator{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text1{
+    text-transform: uppercase;
+    color: #f19220;
+    font-size: 24px;
+    font-weight: 700;
+    font-family: "Roboto Condensed", sans-serif;
+}
+.list-group-item{
+    border: 0 !important;
+    border-bottom: 1px solid black !important;
+}
+.col-lg-12 .list-group-item{
+    border-bottom: 0!important;
+    width: 100%;
+    background: green;
+    text-align: center;
+    color: white;
+}
+.priceItem{
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1fr;
+}
+.price{
+    display: none;
+}

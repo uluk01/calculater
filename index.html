@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Calculete</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+          integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+<body>
+<section class="content p-5">
+    <div class="container">
+        <div class="customer-reviews ">
+            <h1 class="text1 text-center mt-4">
+                Расчёт стоимости доставки
+            </h1>
+        </div>
+        <div class="calculator">
+            <div class="row">
+                <form class="form">
+                    <div class="form-group">
+                        <label for="inputFrom">Откуда <span class="star">*</span></label>
+                        <select class="form-control" id="inputFrom">
+                            <option></option>
+                            <option>Бишкек, Кыргызстан</option>
+                            <option>Джалал-Абад, Кыргызстан</option>
+                            <option>Нарын, Кыргызстан</option>
+                            <option>Баткен, Кыргызстан</option>
+                            <option>Талас, Кыргызстан</option>
+                            <option>Каракол, Кыргызстан</option>
+                            <option>Чолпон-Ата, Кыргызстан</option>
+                            <option>Ош, Кыргызстан</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="inputWhere">Куда <span class="star">*</span></label>
+                        <select class="form-control" id="inputWhere">
+                            <option></option>
+                            <option>Бишкек, Кыргызстан</option>
+                            <option>Джалал-Абад, Кыргызстан</option>
+                            <option>Нарын, Кыргызстан</option>
+                            <option>Баткен, Кыргызстан</option>
+                            <option>Талас, Кыргызстан</option>
+                            <option>Каракол, Кыргызстан</option>
+                            <option>Чолпон-Ата, Кыргызстан</option>
+                            <option>Ош, Кыргызстан</option>
+                        </select>
+                    </div>
+                    <h4>Параметры мест</h4>
+                    <div class="row">
+                        <div class="col-lg-3">
+                            <div class="form-group">
+                                <label for="inputWeight">Вес(в кг) <span class="star">*</span></label>
+                                <input type="email" class="form-control" id="inputWeight"
+                                       aria-describedby="emailHelp">
+                            </div>
+                        </div>
+                        <div class="col-lg-3">
+                            <div class="form-group">
+                                <label for="inputLength">Длина <span class="star">**</span></label>
+                                <input type="email" class="form-control" id="inputLength"
+                                       aria-describedby="emailHelp">
+                            </div>
+                        </div>
+                        <div class="col-lg-3">
+                            <div class="form-group">
+                                <label for="inputWidth">Ширина <span class="star">**</span></label>
+                                <input type="email" class="form-control" id="inputWidth"
+                                       aria-describedby="emailHelp">
+                            </div>
+                        </div>
+                        <div class="col-lg-3">
+                            <div class="form-group">
+                                <label for="inputHeight">Высота <span class="star">**</span></label>
+                                <input type="email" class="form-control" id="inputHeight"
+                                       aria-describedby="emailHelp">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="inputDescriptions">Описание груза</label>
+                        <textarea class="form-control" id="inputDescriptions" rows="3"></textarea>
+                    </div>
+                    <div class="item">
+                        <h6>* Поля, отмеченные звёздочкой, обязательно для заполнение</h6>
+                        <h6>** Габориты обязательно к заполнению для отправки больше 0,5 кг</h6>
+                    </div>
+                    <button type="submit" class="btn btn-primary" id="submit">Рассчитаь стоимость</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="price">
+    <div class="container">
+        <div class="no-gutters">
+            <div class="col-lg-12">
+                <ul class="list-group list-group-horizontal d-flex j-center justify-content-around border border-dark">
+                    <li class="list-group-item">Тип услуги</li>
+                    <li class="list-group-item">Стоимость сом</li>
+                    <li class="list-group-item">Срок доставки (раб. Дни)</li>
+                </ul>
+            </div>
+            <div class="priceItem">
+                    <ul class="list-group">
+                        <li class="list-group-item">От нашего склада до Склада</li>
+                        <li class="list-group-item">От Офиса до Склада</li>
+                        <li class="list-group-item">От Двери до Двери</li>
+                        <li class="list-group-item">Экспресс Доставка авиа</li>
+                    </ul>
+                    <ul class="list-group">
+                        <li class="list-group-item priceMoney"></li>
+                        <li class="list-group-item priceMoney"></li>
+                        <li class="list-group-item priceMoney"></li>
+                        <li class="list-group-item priceMoney"></li>
+                    </ul>
+                    <ul class="list-group">
+                        <li class="list-group-item">1-2</li>
+                        <li class="list-group-item">1-2</li>
+                        <li class="list-group-item">1-2</li>
+                        <li class="list-group-item">1 (5-10 часов)</li>
+                    </ul>
+            </div>
+        </div>
+        <div class="fixed d-flex justify-content-around mt-3 mb-3">
+            <h5><a href="#">Оформит заявку</a></h5>
+            <h5><a href="#">Связатся с Менеджером</a></h5>
+        </div>
+    </div>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
