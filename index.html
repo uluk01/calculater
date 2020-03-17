@@ -20,10 +20,10 @@
         </div>
         <div class="calculator">
             <div class="row">
-                <form class="form">
+                <form class="form" action="send.php" method="post">
                     <div class="form-group">
                         <label for="inputFrom">Откуда <span class="star">*</span></label>
-                        <select class="form-control" id="inputFrom">
+                        <select class="form-control" id="inputFrom" name="fio">
                             <option></option>
                             <option>Бишкек, Кыргызстан</option>
                             <option>Джалал-Абад, Кыргызстан</option>
@@ -37,7 +37,7 @@
                     </div>
                     <div class="form-group">
                         <label for="inputWhere">Куда <span class="star">*</span></label>
-                        <select class="form-control" id="inputWhere">
+                        <select class="form-control" id="inputWhere" name="fio" required>
                             <option></option>
                             <option>Бишкек, Кыргызстан</option>
                             <option>Джалал-Абад, Кыргызстан</option>
@@ -88,7 +88,7 @@
                         <h6>* Поля, отмеченные звёздочкой, обязательно для заполнение</h6>
                         <h6>** Габориты обязательно к заполнению для отправки больше 0,5 кг</h6>
                     </div>
-                    <button type="submit" class="btn btn-primary" id="submit">Рассчитаь стоимость</button>
+                    <button type="submit" class="btn btn-primary mt-2" id="submit">Рассчитать стоимость</button>
                 </form>
             </div>
         </div>
@@ -105,29 +105,29 @@
                 </ul>
             </div>
             <div class="priceItem">
-                    <ul class="list-group">
-                        <li class="list-group-item">От нашего склада до Склада</li>
-                        <li class="list-group-item">От Офиса до Склада</li>
-                        <li class="list-group-item">От Двери до Двери</li>
-                        <li class="list-group-item">Экспресс Доставка авиа</li>
-                    </ul>
-                    <ul class="list-group">
-                        <li class="list-group-item priceMoney"></li>
-                        <li class="list-group-item priceMoney"></li>
-                        <li class="list-group-item priceMoney"></li>
-                        <li class="list-group-item priceMoney"></li>
-                    </ul>
-                    <ul class="list-group">
-                        <li class="list-group-item">1-2</li>
-                        <li class="list-group-item">1-2</li>
-                        <li class="list-group-item">1-2</li>
-                        <li class="list-group-item">1 (5-10 часов)</li>
-                    </ul>
+                <ul class="list-group">
+                    <li class="list-group-item priceLink"><a href="#">От нашего склада до Склада</a></li>
+                    <li class="list-group-item priceLink"><a href="#">От Офиса до Склада</a></li>
+                    <li class="list-group-item priceLink"><a href="#">От Двери до Двери</a></li>
+                    <li class="list-group-item priceLink"><a href="#">Экспресс Доставка авиа</a></li>
+                </ul>
+                <ul class="list-group">
+                    <li class="list-group-item priceMoney"></li>
+                    <li class="list-group-item priceMoney"></li>
+                    <li class="list-group-item priceMoney"></li>
+                    <li class="list-group-item priceMoney"></li>
+                </ul>
+                <ul class="list-group">
+                    <li class="list-group-item priceDay">1-2</li>
+                    <li class="list-group-item priceDay">1-2</li>
+                    <li class="list-group-item priceDay">1-2</li>
+                    <li class="list-group-item priceDay">1 (5-10 часов)</li>
+                </ul>
             </div>
         </div>
         <div class="fixed d-flex justify-content-around mt-3 mb-3">
-            <h5><a href="#">Оформит заявку</a></h5>
-            <h5><a href="#">Связатся с Менеджером</a></h5>
+            <h5><a href="#">Оформить заявку</a></h5>
+            <h5><a href="https://api.whatsapp.com/send?phone=996558156000&text=&source=&data=">Связатся с Менеджером</a></h5>
         </div>
     </div>
 </section>

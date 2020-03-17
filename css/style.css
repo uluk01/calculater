@@ -30,6 +30,7 @@ a{
 .list-group-item{
     border: 0 !important;
     border-bottom: 1px solid black !important;
+    border-radius: 0 !important;
 }
 .col-lg-12 .list-group-item{
     border-bottom: 0!important;
